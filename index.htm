@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lobster&family=Lora:wght@700&family=Montserrat:ital@1&family=Oranienbaum&family=Yeseva+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/46cd246def.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="box">
+            <h1 class="head">ThermoLinker</h1>
+        <div class="info">
+            <label class="label1" for="">Select initial unit
+                <select id="unitFrom">
+                    <option value="cel1" class="rem"></option>
+                    <option value="cel">Celsius °C</option>
+                    <option value="kel">Kelvin K</option>
+                    <option value="frht">Fahrenheit °F</option>
+                </select>
+            </label>
+            <i id="change" class="fa-solid fa-right-left fa-lg"></i>
+            <label class="label1" for="">Select final unit
+                <select id="unitTo">
+                    <option value="cel1" class="rem1"></option>
+                    <option value="cel">Celsius °C</option>
+                    <option value="kel">Kelvin K</option>
+                    <option value="frht">Fahrenheit °F</option>
+                </select>
+            </label>
+        </div>
+        <div class="cont">
+            <label class="show" for="">Enter value to be converted
+                <input id="input" type="text">
+            </label>
+            <label class="show" for="">Your answer is
+                <button id="btn1"></button>
+            </label>
+        </div>
+        <button class="btn"><span class="con"><i id="sign" class="fa-solid fa-arrow-rotate-right"></i></span>Convert</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
